@@ -1,0 +1,25 @@
+html {
+	padding: 1rem 1rem;
+}
+body {
+	background-color: #000000;
+	color: #dedede;
+	font-family: sans-serif;
+	line-height: 1.4;
+	margin: auto;
+	max-width: 50rem;
+	word-wrap: break-word;
+}
+h1 {
+	line-height: 1;
+}
+ul {
+	padding-left: 1.5rem;
+}
+a {
+	color: #2e80dd;
+}
+.email {
+	height: 1rem;
+	vertical-align: middle;
+}
