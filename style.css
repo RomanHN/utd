@@ -1,39 +1,91 @@
-@font-face {
-	font-family: Roboto;
-	src: url('./Roboto/Roboto-Regular.ttf') format('truetype');
-	font-style: normal;
-	font-weight: normal;sans-serif
-}
-
-@font-face {
-	font-family: Roboto;
-	src: url('./Roboto/Roboto-Bold.ttf') format('truetype');
-	font-style: normal;
-	font-weight: bold;
-}
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
 
 html {
-	padding: 1rem 1rem;
+    font-size: 20px;
 }
+
 body {
-	background-color: #000000;
-	color: #dedede;
-	font-family: Roboto, sans-serif;
-	line-height: 1.4;
-	margin: auto;
-	max-width: 50rem;
-	word-wrap: break-word;
+    color: black;
+    background-color: white;
+    font-family: "Source Serif Pro", serif;
+    margin: auto;
+    padding-right: 7rem;
+    padding-top: 2rem;
+    padding-left: 7rem;
+    padding-bottom: 2rem;
+    max-width: 40rem;
+    line-height: 1.5;
 }
-h1 {
-	line-height: 1;
+
+main {
+    /* margin-right: 10rem; */
 }
-ul {
-	padding-left: 1.5rem;
+
+aside {
+    float: right;
+    clear: right;
+    margin-right: -6rem;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
 }
-a {
-	color: #2e80dd;
+
+aside.photo > img {
+    max-width: 10rem;
 }
+
+aside.logo {
+    float: left;
+    clear: left;
+    margin-right: 0;
+    padding-left: 0;
+    margin-left: -6rem;
+    padding-right: 1rem;
+}
+
+aside.logo > img {
+    max-width: 5rem;
+}
+
 .email {
-	height: 1rem;
-	vertical-align: middle;
+    max-height: 1rem;
+    vertical-align: middle;
+}
+
+@media (max-width: 68rem) {
+    body {
+        /* background-color: aqua; */
+        padding-right: 1rem;
+        padding-left: 6rem;
+    }
+    aside {
+        margin-right: 0;
+    }
+    aside > img {
+        max-width: 8rem;
+    }
+    aside.logo {
+        margin-left: -5rem;
+    }
+    aside.logo > img {
+        max-width: 4rem;
+    }
+}
+
+@media (max-width: 45rem) {
+    body {
+        /* background-color: aqua; */
+    }
+    aside.photo {
+        float: none;
+        clear: both;
+        margin: 0;
+        padding: 0;
+    }
+    aside.photo > img {
+        max-width: 10rem;
+    }
+    p.intro, header {
+        margin-left: -4.5rem;
+    }
 }
