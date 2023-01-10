@@ -44,11 +44,6 @@ aside > figure > figcaption > span.source {
     font-style: normal;
 }
 
-.email {
-    max-height: 1rem;
-    vertical-align: middle;
-}
-
 @media (max-width: 68rem) {
     body {
         /* background-color: blue; */
