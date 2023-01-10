@@ -26,8 +26,22 @@ aside {
     padding-bottom: 1rem;
 }
 
-aside.photo > img {
+aside > img {
     max-width: 10rem;
+}
+
+aside > figure > img, aside > figure > figcaption {
+    max-width: 20rem;
+    font-size: 0.85rem;
+}
+
+aside > figure > figcaption {
+    padding-top: 0.5rem;
+    font-style: italic;
+}
+
+aside > figure > figcaption > span.source {
+    font-style: normal;
 }
 
 .email {
@@ -37,7 +51,7 @@ aside.photo > img {
 
 @media (max-width: 68rem) {
     body {
-        /* background-color: aqua; */
+        /* background-color: blue; */
         padding-right: 2rem;
     }
     aside {
@@ -52,14 +66,19 @@ aside.photo > img {
     body {
         /* background-color: aqua; */
     }
-    aside.photo {
+    aside {
         float: none;
         clear: both;
         margin: 0;
         padding: 0;
     }
-    aside.photo > img {
+
+    aside > img {
         max-width: 10rem;
+    }
+    
+    aside > figure > img {
+        max-width: 20rem;
     }
 }
 
